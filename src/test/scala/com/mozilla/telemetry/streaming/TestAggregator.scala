@@ -30,6 +30,7 @@ class TestAggregator extends FlatSpec with Matchers{
       "submission_date",
       "channel",
       "version",
+      "display_version",
       "build_id",
       "application",
       "os_name",
@@ -67,6 +68,7 @@ class TestAggregator extends FlatSpec with Matchers{
     results("submission_date").toString should be ("2016-04-07")
     results("channel") should be (app.channel)
     results("version") should be (app.version)
+    results("display_version") should be (Set(app.displayVersion))
     results("build_id") should be (app.buildId)
     results("application") should be (app.name)
     results("os_name") should be ("Linux")

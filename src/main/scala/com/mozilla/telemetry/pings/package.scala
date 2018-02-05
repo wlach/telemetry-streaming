@@ -19,6 +19,7 @@ package object pings {
       platformVersion: String,
       vendor: String,
       version: String,
+      displayVersion: String,
       xpcomAbi: String)
 
   case class Build(
